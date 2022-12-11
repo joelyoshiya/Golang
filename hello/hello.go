@@ -1,9 +1,11 @@
-package main
+package main // defines a standalone executable program
 
-import "fmt"
+import (
+	"fmt"
 
-import "rsc.io/quote"
+	"rsc.io/quote"
+)
 
-func main() {
-    fmt.Println(quote.Go())
+func hello_go() {
+	fmt.Println(quote.Go())
 }
