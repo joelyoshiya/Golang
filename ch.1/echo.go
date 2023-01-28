@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-func main() {
+func echo() {
 	var s, sep string // implicitly initialized to the zero value for the type, which is "" for strings
 	for i := 1; i < len(os.Args); i++ {
 		s += sep + os.Args[i]
