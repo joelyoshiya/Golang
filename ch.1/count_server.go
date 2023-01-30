@@ -11,7 +11,7 @@ import (
 var mu sync.Mutex
 var count int
 
-func main() {
+func startServer() {
 	http.HandleFunc("/", handler)
 	http.HandleFunc("/count", counter)
 	http.HandleFunc("/inspect", handler_inspect_request)
